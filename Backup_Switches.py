@@ -28,6 +28,7 @@ for line in f:
         tn.write("show run\n")
         tn.write("exit\n")
 
+#Guardar configuración
 readoutput = tn.read_all()
 saveoutput = open("switch" + HOST, "w")
 saveoutput.write(readoutput)
